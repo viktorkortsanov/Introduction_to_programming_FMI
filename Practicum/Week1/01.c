@@ -5,7 +5,7 @@ int main(void) {
 
 	int n = 0;
 	scanf("%d", &n);
-	printf("%d", n);
+	printf("%d", n % 2 == 0);
 
 	return 0;
 }
