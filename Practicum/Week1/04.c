@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int main() {
-
 	int totalSeconds = 0;
 
 	scanf("%d", &totalSeconds);

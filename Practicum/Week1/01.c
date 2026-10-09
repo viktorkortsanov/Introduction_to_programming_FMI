@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 int main(void) {
-
 	int n = 0;
 	scanf("%d", &n);
-	printf("%d", n % 2 == 0);
+
+	int isEvenOrOdd = n % 2 == 0;
+	printf("%d", isEvenOrOdd);
 
 	return 0;
 }
