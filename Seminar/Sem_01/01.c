@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-	float n = 0;
+	float n;
 	scanf("%f", &n);
 
 	int isValidGrade = (n >= 2.00 && n <= 6.00);

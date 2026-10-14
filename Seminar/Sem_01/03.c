@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 int main() {
-	int n1 = 0;
-	int n2 = 0;
+	int n1, n2;
 	scanf("%d %d", &n1, &n2);
 
 	int numOneIsBigger = n1 > n2;

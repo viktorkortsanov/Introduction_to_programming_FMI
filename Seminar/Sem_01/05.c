@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-	int money = 0;
+	int money;
 	scanf("%d", &money);
 
 	int hundred = money / 100;

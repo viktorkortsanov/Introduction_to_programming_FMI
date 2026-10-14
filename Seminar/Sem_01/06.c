@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 int main() {
-	int a = 0;
-	int b = 0;
+	int a, b;
 	scanf("%d %d", &a, &b);
 
 	int expr1 = a + b;
@@ -11,4 +10,6 @@ int main() {
 	int result = expr1 * expr1 * expr1 * expr1 - expr2 * expr2;
 
 	printf("%d", result);
+
+	return 0;
 }
