@@ -14,8 +14,10 @@ int main() {
 	case '-': result = a - b; break;
 	case '*': result = a * b; break;
 	case '/': result = (float)a / b; break;
-	default: printf("Invalid operator!");
+	default: printf("Invalid operator!"); return 1;
 	}
 
 	printf("%g", result);
+
+	return 0;
 }
