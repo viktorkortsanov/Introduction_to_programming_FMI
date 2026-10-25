@@ -9,5 +9,6 @@ int main() {
 	int result = n * isTwoDigits + (n % 10) * !isTwoDigits;
 
 	printf("%d", result);
+
 	return 0;
 }
