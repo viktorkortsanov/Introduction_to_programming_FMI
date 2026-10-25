@@ -13,6 +13,7 @@ int main() {
 	case 5: printf("5 - Friday");  break;
 	case 6: printf("6 - Saturday");  break;
 	case 7: printf("7 - Sunday");  break;
+	default: printf("Please enter a number from 1 to 7");
 	}
 
 	return 0;
