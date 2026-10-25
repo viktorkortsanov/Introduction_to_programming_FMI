@@ -6,7 +6,7 @@ int main() {
 	scanf("%d", &n);
 
 	int isTwoDigits = n >= 10 && n <= 99;
-	int result = n * isTwoDigits + (n % 10) * !isTwoDigits;
+	int result = n * isTwoDigits + n % 10 * !isTwoDigits;
 
 	printf("%d", result);
 
