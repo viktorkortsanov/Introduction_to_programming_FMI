@@ -29,11 +29,13 @@ int main() {
 			temp /= 10;
 		}
 
-		if (isDifferent && i == b) {
-			printf("%d", i);
-		}
-		else {
-			printf("%d, ", i);
+		if (isDifferent) {
+			if (i == b) {
+				printf("%d", i);
+			}
+			else {
+				printf("%d, ", i);
+			}
 		}
 	}
 
