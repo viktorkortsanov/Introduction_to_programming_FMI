@@ -21,12 +21,10 @@ unsigned getLongestSequence(unsigned reversedNum) {
 		reversedNum /= 10;
 		int digit2 = reversedNum % 10;
 
-		currentLongestSequence =
-			currentLongestSequence * 10 + digit1;
+		currentLongestSequence = currentLongestSequence * 10 + digit1;
 
 		if (digit1 >= digit2 || reversedNum == 0) {
-			if (getLength(currentLongestSequence) >
-				getLength(longestSequence)) {
+			if (getLength(currentLongestSequence) > getLength(longestSequence)) {
 				longestSequence = currentLongestSequence;
 			}
 
@@ -50,13 +48,13 @@ unsigned getLength(unsigned n) {
 
 int main() {
 	unsigned n;
-	scanf("%d", &n);
+	scanf("%u", &n);
 
 	unsigned reversedNum = reverseNum(n);
 	unsigned longestSequence = getLongestSequence(reversedNum);
 	unsigned longestSequenceLength = getLength(longestSequence);
 
-	printf("%d (%d)", longestSequenceLength, longestSequence);
+	printf("%u (%u)", longestSequenceLength, longestSequence);
 
 	return 0;
 }
