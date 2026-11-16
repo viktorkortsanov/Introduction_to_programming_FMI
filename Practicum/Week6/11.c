@@ -17,7 +17,7 @@ int reverseNum(int n) {
 int getLongestDigitSequence(int n) {
 	int reversedNum = reverseNum(n);
 	int longestLength = 1;
-	int currentlongestLength = 1;
+	int currentLongestLength = 1;
 
 	while (n >= 10) {
 		int digit1 = reversedNum % 10;
@@ -25,14 +25,14 @@ int getLongestDigitSequence(int n) {
 		int digit2 = reversedNum % 10;
 
 		if (digit1 <= digit2) {
-			currentlongestLength++;
+			currentLongestLength++;
 		}
 		else {
-			currentlongestLength = 1;
+			currentLongestLength = 1;
 		}
 
-		if (currentlongestLength > longestLength) {
-			longestLength = currentlongestLength;
+		if (currentLongestLength > longestLength) {
+			longestLength = currentLongestLength;
 		}
 
 		n /= 10;
