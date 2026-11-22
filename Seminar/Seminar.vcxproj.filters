@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sem_05\06.c">
+    <ClCompile Include="Sem_05\07.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
