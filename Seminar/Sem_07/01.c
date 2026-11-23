@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int getSingleElement(const int arr[], const size_t size) {
+	int result = 0;
+
+	for (size_t i = 0; i < size; i++) {
+		result ^= arr[i];
+	}
+
+	return result;
+}
+
+int main() {
+	int arr[] = { 9, 18, 9, -50, 12, 18, 15, 12, -50 };
+	size_t size = sizeof(arr) / sizeof(int);
+
+	printf("%d", getSingleElement(arr, size));
+
+	return 0;
+}
